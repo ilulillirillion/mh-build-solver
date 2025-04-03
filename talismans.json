@@ -1,0 +1,1596 @@
+[
+  {
+    "name": "Blast Charm I",
+    "rarity": 3,
+    "skills": [
+      {
+        "name": "Blast Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blast Charm II",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Blast Resistance",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Blast Charm III",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Blast Resistance",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Bleed Charm I",
+    "rarity": 3,
+    "skills": [
+      {
+        "name": "Bleeding Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bleed Charm II",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Bleeding Resistance",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Bleed Charm III",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Bleeding Resistance",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Blessing Charm I",
+    "rarity": 3,
+    "skills": [
+      {
+        "name": "Divine Blessing",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blessing Charm II",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Divine Blessing",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Blessing Charm III",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Divine Blessing",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Blight Charm I",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Blight Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blight Charm II",
+    "rarity": 7,
+    "skills": [
+      {
+        "name": "Blight Resistance",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Bombardier Charm I",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Bombardier",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bombardier Charm II",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Bombardier",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Bombardier Charm III",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Bombardier",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Botany Charm I",
+    "rarity": 2,
+    "skills": [
+      {
+        "name": "Botanist",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Botany Charm II",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Botanist",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Botany Charm III",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Botanist",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Botany Charm IV",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Botanist",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "name": "Breaker Charm I",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Partbreaker",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Breaker Charm II",
+    "rarity": 7,
+    "skills": [
+      {
+        "name": "Partbreaker",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Chain Charm I",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Burst",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Chain Charm II",
+    "rarity": 7,
+    "skills": [
+      {
+        "name": "Burst",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Chainblade Charm I",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Flayer",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Chainblade Charm II",
+    "rarity": 7,
+    "skills": [
+      {
+        "name": "Flayer",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Challenger Charm I",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Agitator",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Challenger Charm II",
+    "rarity": 7,
+    "skills": [
+      {
+        "name": "Agitator",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Convert Charm I",
+    "rarity": 7,
+    "skills": [
+      {
+        "name": "Convert Element",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Counter Charm I",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Counterstrike",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Counter Charm II",
+    "rarity": 7,
+    "skills": [
+      {
+        "name": "Counterstrike",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Counter Charm III",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Counterstrike",
+        "points": 2 
+      }
+    ]
+  },
+  {
+    "name": "Counterattack Charm I",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Adrenaline Rush",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Counterattack Charm II",
+    "rarity": 7,
+    "skills": [
+      {
+        "name": "Adrenaline Rush",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Defense Charm I",
+    "rarity": 2,
+    "skills": [
+      {
+        "name": "Defense Boost",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Defense Charm II",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Defense Boost",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Defense Charm III",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Defense Boost",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Defense Charm IV",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Defense Boost",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "name": "Descent Charm I",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Ambush",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Descent Charm II",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Ambush",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Dragon Charm I",
+    "rarity": 3,
+    "skills": [
+      {
+        "name": "Dragon Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Dragon Charm II",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Dragon Resistance",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Dragon Charm III",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Dragon Resistance",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Earplugs Charm I",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Earplugs",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Escape Charm I",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Bind Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Escape Charm II",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Bind Resistance",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Escape Charm III",
+    "rarity": 7,
+    "skills": [
+      {
+        "name": "Bind Resistance",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Evasion Charm I",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Evade Window",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Evasion Charm II",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Evade Window",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Evasion Charm III",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Evade Window",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Exploiter Charm I",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Weakness Exploit",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Exploiter Charm II",
+    "rarity": 7,
+    "skills": [
+      {
+        "name": "Weakness Exploit",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Extension Charm I",
+    "rarity": 3,
+    "skills": [
+      {
+        "name": "Item Prolonger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Extension Charm II",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Item Prolonger",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Extension Charm III",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Item Prolonger",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Fire Charm I",
+    "rarity": 2,
+    "skills": [
+      {
+        "name": "Fire Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Fire Charm II",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Fire Resistance",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Fire Charm III",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Fire Resistance",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Fitness Charm I",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Constitution",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Fitness Charm II",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Constitution",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Fitness Charm III",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Constitution",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Fitness Charm IV",
+    "rarity": 7,
+    "skills": [
+      {
+        "name": "Constitution",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "name": "Foray Charm I",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Foray",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Foray Charm II",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Foray",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Friendship Charm I",
+    "rarity": 3,
+    "skills": [
+      {
+        "name": "Wide-Range",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Friendship Charm II",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Wide-Range",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Friendship Charm III",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Wide-Range",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Friendship Charm IV",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Wide-Range",
+        "points": 4
+      }
+    ]
+  },
+  {
+    "name": "Fury Charm I",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Resentment",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Fury Charm II",
+    "rarity": 7,
+    "skills": [
+      {
+        "name": "Resentment",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Geology Charm I",
+    "rarity": 2,
+    "skills": [
+      {
+        "name": "Geologist",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Geology Charm II",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Geologist",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Geology Charm III",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Geologist",
+        "points": 3 
+      }
+    ]
+  },
+  {
+    "name": "Glutton's Charm I",
+    "rarity": 2,
+    "skills": [
+      {
+        "name": "Speed Eating",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Glutton's Charm II",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Speed Eating",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Glutton's Charm III",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Speed Eating",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Grit Charm I",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Heroics",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Grit Charm II",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Heroics",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Grit Charm III",
+    "rarity": 7,
+    "skills": [
+      {
+        "name": "Heroics",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Guard Charm I",
+    "rarity": 3,
+    "skills": [
+      {
+        "name": "Iron Skin",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Guard Charm II",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Iron Skin",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Guard Charm III",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Iron Skin",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Hope Charm",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Self-Improvement",
+        "points": 1
+      },
+      {
+        "name": "Recovery Up",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Hungerless Charm I",
+    "rarity": 2,
+    "skills": [
+      {
+        "name": "Hunger Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Hungerless Charm II",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Hunger Resistance",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Hungerless Charm III",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Hunger Resistance",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Ice Charm I",
+    "rarity": 3,
+    "skills": [
+      {
+        "name": "Ice Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Ice Charm II",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Ice Resistance",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Ice Charm III",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Ice Resistance",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Imbibe Charm I",
+    "rarity": 7,
+    "skills": [
+      {
+        "name": "Elemental Absorption",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Impact Charm I",
+    "rarity": 3,
+    "skills": [
+      {
+        "name": "Flinch Free",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Impact Charm II",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Flinch Free",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Impact Charm III",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Flinch Free",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Intimidator Charm I",
+    "rarity": 3,
+    "skills": [
+      {
+        "name": "Intimidator",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Intimidator Charm II",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Intimidator",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Intimidator Charm III",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Intimidator",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Leaping Charm I",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Evade Extender",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Leaping Charm II",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Evade Extender",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Leaping Charm III",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Evade Extender",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Light Eater's Charm I",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Free Meal",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Light Eater's Charm II",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Free Meal",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Light Eater's Charm III",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Free Meal",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Maintenance Charm I",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Tool Specialist",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Maintenance Charm II",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Tool Specialist",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Maintenance Charm III",
+    "rarity": 7,
+    "skills": [
+      {
+        "name": "Tool Specialist",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Marathon Charm I",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Marathon Runner",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Marathon Charm II",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Marathon Runner",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Marathon Charm III",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Marathon Runner",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Mighty Charm I",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Maximum Might",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Mighty Charm II",
+    "rarity": 7,
+    "skills": [
+      {
+        "name": "Maximum Might",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Mushroom Charm I",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Mushroomancer",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Mushroom Charm II",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Mushroomancer",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Mushroom Charm III",
+    "rarity": 7,
+    "skills": [
+      {
+        "name": "Mushroomancer",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Paralysis Charm I",
+    "rarity": 2,
+    "skills": [
+      {
+        "name": "Paralysis Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Paralysis Charm II",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Paralysis Resistance",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Paralysis Charm III",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Paralysis Resistance",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Phoenix Charm I",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Coalescence",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Phoenix Charm II",
+    "rarity": 7,
+    "skills": [
+      {
+        "name": "Coalescence",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Poison Charm I",
+    "rarity": 3,
+    "skills": [
+      {
+        "name": "Poison Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Poison Charm II",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Poison Resistance",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Poison Charm III",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Poison Resistance",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Power Charm I",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Latent Power",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Power Charm II",
+    "rarity": 7,
+    "skills": [
+      {
+        "name": "Latent Power",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Recovery Charm I",
+    "rarity": 3,
+    "skills": [
+      {
+        "name": "Recovery Up",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Recovery Charm II",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Recovery Up",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Recovery Charm III",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Recovery Up",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Sanity Charm I",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Antivirus",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Sanity Charm II",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Antivirus",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Sanity Charm III",
+    "rarity": 7,
+    "skills": [
+      {
+        "name": "Antivirus",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Sheathe Charm I",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Quick Sheathe",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Sheathe Charm II",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Quick Sheathe",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Sheathe Charm III",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Quick Sheathe",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Sleep Charm I",
+    "rarity": 3,
+    "skills": [
+      {
+        "name": "Sleep Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Sleep Charm II",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Sleep Resistance",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Sleep Charm III",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Sleep Resistance",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Speed Heal Charm I",
+    "rarity": 2,
+    "skills": [
+      {
+        "name": "Recovery Speed",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Speed Heal Charm II",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Recovery Speed",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Speed Heal Charm III",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Recovery Speed",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Stun Charm I",
+    "rarity": 3,
+    "skills": [
+      {
+        "name": "Stun Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Stun Charm II",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Stun Resistance",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Stun Charm III",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Stun Resistance",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Surge Charm I",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Stamina Surge",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Surge Charm II",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Stamina Surge",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Surge Charm III",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Stamina Surge",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Survival Charm I",
+    "rarity": 3,
+    "skills": [
+      {
+        "name": "Survival Expert",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Survival Charm II",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Survival Expert",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Survival Charm III",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Survival Expert",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Thunder Charm I",
+    "rarity": 3,
+    "skills": [
+      {
+        "name": "Thunder Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Thunder Charm II",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Thunder Resistance",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Thunder Charm III",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Thunder Resistance",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Tremor Charm I",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Tremor Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Tremor Charm II",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Tremor Resistance",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Tremor Charm III",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Tremor Resistance",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Unscathed Charm I",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Peak Performance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Unscathed Charm II",
+    "rarity": 7,
+    "skills": [
+      {
+        "name": "Peak Performance",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Water Charm I",
+    "rarity": 2,
+    "skills": [
+      {
+        "name": "Water Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Water Charm II",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Water Resistance",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Water Charm III",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Water Resistance",
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Windproof Charm I",
+    "rarity": 4,
+    "skills": [
+      {
+        "name": "Windproof",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Windproof Charm II",
+    "rarity": 5,
+    "skills": [
+      {
+        "name": "Windproof",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Windproof Charm III",
+    "rarity": 6,
+    "skills": [
+      {
+        "name": "Windproof",
+        "points": 3
+      }
+    ]
+  }
+]

@@ -1,0 +1,4304 @@
+[
+  {
+    "name": "Attack Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Attack Boost",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Attack Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Attack Boost",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Attack Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Attack Boost",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Furor Jewel",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Resentment",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Counterattack Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Adrenaline Rush",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Guardian Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Guardian Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Guardian Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Guardian/Blaze Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "points": 1
+      },
+      {
+        "name": "Fire Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Guardian/Stream Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "points": 1
+      },
+      {
+        "name": "Water Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Guardian/Frost Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "points": 1
+      },
+      {
+        "name": "Ice Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Guardian/Bolt Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "points": 1
+      },
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Guardian/Dragon Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "points": 1
+      },
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Guardian/Handicraft Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "points": 1
+      },
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Guardian/Ironwall Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Offensive Guard",
+        "points": 1
+      },
+      {
+        "name": "Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Flawless Jewel",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Peak Performance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Counter Jewel",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Counterstrike",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Expert Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Critical Eye",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Expert Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Critical Eye",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Expert Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Critical Eye",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Critical Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Critical Boost",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Critical Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Critical Boost",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Critical Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Critical Boost",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Tenderizer Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Weakness Exploit",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Draw Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Critical Draw",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Draw Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Critical Draw",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Draw Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Critical Draw",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Mighty Jewel",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Maximum Might",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blaze Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Fire Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blaze Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Fire Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blaze Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Fire Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blaze/Guardian Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Fire Attack",
+        "points": 1
+      },
+      {
+        "name": "Offensive Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blaze/Crit Elem Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Fire Attack",
+        "points": 1
+      },
+      {
+        "name": "Critical Element",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blaze/Handicraft Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Fire Attack",
+        "points": 1
+      },
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blaze/Rzr Sharp Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Fire Attack",
+        "points": 1
+      },
+      {
+        "name": "Razor Sharp",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blaze/Precise Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Fire Attack",
+        "points": 1
+      },
+      {
+        "name": "Ballistics",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blaze/Opener Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Fire Attack",
+        "points": 1
+      },
+      {
+        "name": "Opening Shot",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blaze/Bandolier Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Fire Attack",
+        "points": 1
+      },
+      {
+        "name": "Tetrad Shot",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blaze/Focus Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Fire Attack",
+        "points": 1
+      },
+      {
+        "name": "Focus",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blaze/Enhancer Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Fire Attack",
+        "points": 1
+      },
+      {
+        "name": "Power Prolonger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blaze/KO Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Fire Attack",
+        "points": 1
+      },
+      {
+        "name": "Slugger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blaze/Quickswitch Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Fire Attack",
+        "points": 1
+      },
+      {
+        "name": "Rapid Morph",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blaze/Ironwall Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Fire Attack",
+        "points": 1
+      },
+      {
+        "name": "Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blaze/Shield Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Fire Attack",
+        "points": 1
+      },
+      {
+        "name": "Guard Up",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Stream Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Water Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Stream Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Water Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Stream Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Water Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Stream/Guardian Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Water Attack",
+        "points": 1
+      },
+      {
+        "name": "Offensive Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Stream/Crit Elem Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Water Attack",
+        "points": 1
+      },
+      {
+        "name": "Critical Element",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Stream/Handicraft Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Water Attack",
+        "points": 1
+      },
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Stream/Rzr Sharp Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Water Attack",
+        "points": 1
+      },
+      {
+        "name": "Razor Sharp",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Stream/Precise Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Water Attack",
+        "points": 1
+      },
+      {
+        "name": "Ballistics",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Stream/Opener Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Water Attack",
+        "points": 1
+      },
+      {
+        "name": "Opening Shot",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Stream/Bandolier Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Water Attack",
+        "points": 1
+      },
+      {
+        "name": "Tetrad Shot",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Stream/Focus Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Water Attack",
+        "points": 1
+      },
+      {
+        "name": "Focus",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Stream/Enhancer Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Water Attack",
+        "points": 1
+      },
+      {
+        "name": "Power Prolonger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Stream/KO Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Water Attack",
+        "points": 1
+      },
+      {
+        "name": "Slugger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Stream/Quickswitch Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Water Attack",
+        "points": 1
+      },
+      {
+        "name": "Rapid Morph",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Stream/Ironwall Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Water Attack",
+        "points": 1
+      },
+      {
+        "name": "Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Stream/Shield Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Water Attack",
+        "points": 1
+      },
+      {
+        "name": "Guard Up",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Frost Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Ice Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Frost Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Ice Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Frost Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Ice Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Frost/Guardian Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Ice Attack",
+        "points": 1
+      },
+      {
+        "name": "Offensive Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Frost/Crit Elem Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Ice Attack",
+        "points": 1
+      },
+      {
+        "name": "Critical Element",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Frost/Handicraft Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Ice Attack",
+        "points": 1
+      },
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Frost/Rzr Sharp Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Ice Attack",
+        "points": 1
+      },
+      {
+        "name": "Razor Sharp",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Frost/Precise Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Ice Attack",
+        "points": 1
+      },
+      {
+        "name": "Ballistics",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Frost/Opener Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Ice Attack",
+        "points": 1
+      },
+      {
+        "name": "Opening Shot",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Frost/Bandolier Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Ice Attack",
+        "points": 1
+      },
+      {
+        "name": "Tetrad Shot",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Frost/Focus Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Ice Attack",
+        "points": 1
+      },
+      {
+        "name": "Focus",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Frost/Enhancer Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Ice Attack",
+        "points": 1
+      },
+      {
+        "name": "Power Prolonger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Frost/KO Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Ice Attack",
+        "points": 1
+      },
+      {
+        "name": "Slugger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Frost/Quickswitch Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Ice Attack",
+        "points": 1
+      },
+      {
+        "name": "Rapid Morph",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Frost/Ironwall Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Ice Attack",
+        "points": 1
+      },
+      {
+        "name": "Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Frost/Shield Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Ice Attack",
+        "points": 1
+      },
+      {
+        "name": "Guard Up",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bolt Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bolt Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bolt Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bolt/Guardian Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      },
+      {
+        "name": "Offensive Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bolt/Crit Elem Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      },
+      {
+        "name": "Critical Element",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bolt/Handicraft Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      },
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bolt/Rzr Sharp Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      },
+      {
+        "name": "Razor Sharp",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bolt/Precise Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      },
+      {
+        "name": "Ballistics",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bolt/Opener Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      },
+      {
+        "name": "Opening Shot",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bolt/Bandolier Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      },
+      {
+        "name": "Tetrad Shot",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bolt/Focus Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      },
+      {
+        "name": "Focus",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bolt/Enhancer Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      },
+      {
+        "name": "Power Prolonger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bolt/KO Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      },
+      {
+        "name": "Slugger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bolt/Quickswitch Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      },
+      {
+        "name": "Rapid Morph",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bolt/Ironwall Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      },
+      {
+        "name": "Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bolt/Shield Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      },
+      {
+        "name": "Guard Up",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Dragon Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Dragon Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Dragon Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Dragon/Guardian Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      },
+      {
+        "name": "Offensive Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Dragon/Crit Elem Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      },
+      {
+        "name": "Critical Element",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Dragon/Handicraft Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      },
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Dragon/Rzr Sharp Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      },
+      {
+        "name": "Razor Sharp",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Dragon/Precise Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      },
+      {
+        "name": "Ballistics",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Dragon/Opener Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      },
+      {
+        "name": "Opening Shot",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Dragon/Bandolier Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      },
+      {
+        "name": "Tetrad Shot",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Dragon/Focus Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      },
+      {
+        "name": "Focus",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Dragon/Enhancer Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      },
+      {
+        "name": "Power Prolonger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Dragon/KO Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      },
+      {
+        "name": "Slugger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Dragon/Quickswitch Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      },
+      {
+        "name": "Rapid Morph",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Dragon/Ironwall Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      },
+      {
+        "name": "Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Dragon/Shield Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      },
+      {
+        "name": "Guard Up",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Venom Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Poison Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Venom Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Poison Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Venom Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Poison Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Paralyzer Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Paralysis Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Paralyzer Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Paralysis Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Paralyzer Jwl III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Paralysis Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Sleep Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Sleep Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Sleep Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Sleep Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Sleep Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Sleep Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blast Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Blast Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blast Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Blast Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blast Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Blast Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Crit Element Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Critical Element",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Crit Element Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Critical Element",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Crit Elem Jwl III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Critical Element",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Crit Elem/Blaze Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Critical Element",
+        "points": 1
+      },
+      {
+        "name": "Fire Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Crit Elem/Stream Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Critical Element",
+        "points": 1
+      },
+      {
+        "name": "Water Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Crit Elem/Frost Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Critical Element",
+        "points": 1
+      },
+      {
+        "name": "Ice Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Crit Elem/Bolt Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Critical Element",
+        "points": 1
+      },
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Crit Elem/Dragon Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Critical Element",
+        "points": 1
+      },
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Crit Elem/Handicraft Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Critical Element",
+        "points": 1
+      },
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Crit Element/Precise Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Critical Element",
+        "points": 1
+      },
+      {
+        "name": "Ballistics",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Crit Elem/KO Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Critical Element",
+        "points": 1
+      },
+      {
+        "name": "Slugger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Crit Elem/Ironwall Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Critical Element",
+        "points": 1
+      },
+      {
+        "name": "Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Crit Status Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Critical Status",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Crit Status Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Critical Status",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Crit Stat Jwl III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Critical Status",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Crit Stat/Handicraft Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Critical Status",
+        "points": 1
+      },
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Crit Stat/Precise Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Critical Status",
+        "points": 1
+      },
+      {
+        "name": "Ballistics",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Crit Status/KO Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Critical Status",
+        "points": 1
+      },
+      {
+        "name": "Slugger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Crit Stat/Ironwall Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Critical Status",
+        "points": 1
+      },
+      {
+        "name": "Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Charge Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Charge Master",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Charge Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Charge Master",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Charge Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Charge Master",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Charge/Handicraft Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Charge Master",
+        "points": 1
+      },
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Charge/KO Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Charge Master",
+        "points": 1
+      },
+      {
+        "name": "Slugger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Handicraft Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Handicraft Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Handicraft Jwl III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Razor Sharp Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Razor Sharp",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Razor Sharp Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Razor Sharp",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Rzr Sharp Jwl III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Razor Sharp",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Rzr Sharp/Blaze Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Razor Sharp",
+        "points": 1
+      },
+      {
+        "name": "Fire Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Rzr Sharp/Stream Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Razor Sharp",
+        "points": 1
+      },
+      {
+        "name": "Water Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Rzr Sharp/Frost Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Razor Sharp",
+        "points": 1
+      },
+      {
+        "name": "Ice Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Rzr Sharp/Bolt Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Razor Sharp",
+        "points": 1
+      },
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Rzr Sharp/Dragon Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Razor Sharp",
+        "points": 1
+      },
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Rzr Sharp/Handicraft Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Razor Sharp",
+        "points": 1
+      },
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Razor Sharp/KO Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Razor Sharp",
+        "points": 1
+      },
+      {
+        "name": "Slugger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Rzr Sharp/Ironwall Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Razor Sharp",
+        "points": 1
+      },
+      {
+        "name": "Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Sharp Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Protective Polish",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Sharp Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Protective Polish",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Sharp Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Protective Polish",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Mind's Eye Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Mind's Eye",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Mind's Eye Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Mind's Eye",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Mind's Eye Jwl III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Mind's Eye",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blunt Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Bludgeoner",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blunt Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Bludgeoner",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blunt Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Bludgeoner",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Mastery Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Master's Touch",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Forceshot Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Normal Shots",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Pierce Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Piercing Shots",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Spread Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Spread/Power Shots",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Precise Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Ballistics",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Precise Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Ballistics",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Precise Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Ballistics",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Salvo Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Rapid Fire Up",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Opener Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Opener Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Opener Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Opener/Blaze Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "points": 1
+      },
+      {
+        "name": "Fire Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Opener/Stream Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "points": 1
+      },
+      {
+        "name": "Water Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Opener/Frost Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "points": 1
+      },
+      {
+        "name": "Ice Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Opener/Bolt Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "points": 1
+      },
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Opener/Dragon Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "points": 1
+      },
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Opener/Precise Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "points": 1
+      },
+      {
+        "name": "Ballistics",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Opener/Ironwall Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Opening Shot",
+        "points": 1
+      },
+      {
+        "name": "Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bandolier Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bandolier Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bandolier Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bandolier/Blaze Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "points": 1
+      },
+      {
+        "name": "Fire Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bandolier/Stream Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "points": 1
+      },
+      {
+        "name": "Water Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bandolier/Frost Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "points": 1
+      },
+      {
+        "name": "Ice Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bandolier/Bolt Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "points": 1
+      },
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bandolier/Dragon Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "points": 1
+      },
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bandolier/Precise Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "points": 1
+      },
+      {
+        "name": "Ballistics",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bandolier/Ironwall Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Tetrad Shot",
+        "points": 1
+      },
+      {
+        "name": "Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Trueshot Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Special Ammo Boost",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Trueshot Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Special Ammo Boost",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Poisoncoat Jewel",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Poison Functionality",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Paracoat Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Para Functionality",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Sleepcoat Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Sleep Functionality",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Blastcoat Jewel",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Blast Functionality",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Draincoat Jewel",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Exhaust Functionality",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Defense Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Defense Boost",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Protection Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Divine Blessing",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Fire Res Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Fire Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Water Res Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Water Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Thunder Res Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Thunder Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Ice Res Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Ice Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Dragon Res Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Dragon Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Antidote Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Poison Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Antipara Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Paralysis Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Pep Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Sleep Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Def Lock Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Iron Skin",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Steadfast Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Stun Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Suture Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Bleeding Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Escape Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Bind Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Antiblast Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Blast Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Perfume Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Stench Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Adapt Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Adaptability",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Medicine Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Recovery Up",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Recovery Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Recovery Speed",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Survival Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Survival Expert",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Physique Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Constitution",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Refresh Jewel",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Stamina Surge",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Sprinter Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Marathon Runner",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Hungerless Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Hunger Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Challenger Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Agitator",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Throttle Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Latent Power",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Potential Jewel",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Heroics",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Chain Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Burst",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Foray Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Foray",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Flayer Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Flayer",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Focus Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Focus",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Focus Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Focus",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Focus Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Focus",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Focus/Blaze Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Focus",
+        "points": 1
+      },
+      {
+        "name": "Fire Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Focus/Stream Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Focus",
+        "points": 1
+      },
+      {
+        "name": "Water Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Focus/Frost Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Focus",
+        "points": 1
+      },
+      {
+        "name": "Ice Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Focus/Bolt Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Focus",
+        "points": 1
+      },
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Focus/Dragon Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Focus",
+        "points": 1
+      },
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Focus/Handicraft Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Focus",
+        "points": 1
+      },
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Focus/Precise Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Focus",
+        "points": 1
+      },
+      {
+        "name": "Ballistics",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Focus/KO Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Focus",
+        "points": 1
+      },
+      {
+        "name": "Slugger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Enhancer Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Power Prolonger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Enhancer Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Power Prolonger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Enhancer Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Power Prolonger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Enhancer/Blaze Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Power Prolonger",
+        "points": 1
+      },
+      {
+        "name": "Fire Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Enhancer/Stream Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Power Prolonger",
+        "points": 1
+      },
+      {
+        "name": "Water Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Enhancer/Frost Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Power Prolonger",
+        "points": 1
+      },
+      {
+        "name": "Ice Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Enhancer/Bolt Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Power Prolonger",
+        "points": 1
+      },
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Enhancer/Dragon Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Power Prolonger",
+        "points": 1
+      },
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Enhancer/Handicraft Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Power Prolonger",
+        "points": 1
+      },
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Gambit Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Punishing Draw",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Gambit Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Punishing Draw",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Gambit Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Punishing Draw",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Gambit/Handicraft Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Punishing Draw",
+        "points": 1
+      },
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Gambit/KO Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Punishing Draw",
+        "points": 1
+      },
+      {
+        "name": "Slugger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Gambit/Ironwall Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Punishing Draw",
+        "points": 1
+      },
+      {
+        "name": "Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "KO Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Slugger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "KO Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Slugger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "KO Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Slugger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Drain Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Stamina Thief",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Drain Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Stamina Thief",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Drain Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Stamina Thief",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Artillery Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Artillery",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Artillery Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Artillery",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Artillery Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Artillery",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Quickswitch Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Rapid Morph",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Quickswitch Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Rapid Morph",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Quickswitch Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Rapid Morph",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Quickswitch/Blaze Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Rapid Morph",
+        "points": 1
+      },
+      {
+        "name": "Fire Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Quickswitch/Stream Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Rapid Morph",
+        "points": 1
+      },
+      {
+        "name": "Water Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Quickswitch/Frost Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Rapid Morph",
+        "points": 1
+      },
+      {
+        "name": "Ice Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Quickswitch/Bolt Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Rapid Morph",
+        "points": 1
+      },
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Quickswitch/Dragon Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Rapid Morph",
+        "points": 1
+      },
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Quickswitch/Handicraft Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Rapid Morph",
+        "points": 1
+      },
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Quickswitch/KO Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Rapid Morph",
+        "points": 1
+      },
+      {
+        "name": "Slugger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Quickswitch/Ironwall Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Rapid Morph",
+        "points": 1
+      },
+      {
+        "name": "Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Destroyer Jewel",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Partbreaker",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Phoenix Jewel",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Coalescence",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Ambush Jewel",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Ambush",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Sane Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Antivirus",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Sonorous Jewel",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Horn Maestro",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Sonorous/Attack Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Horn Maestro",
+        "points": 1
+      },
+      {
+        "name": "Attack Boost",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Sonorous/Expert Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Horn Maestro",
+        "points": 1
+      },
+      {
+        "name": "Critical Eye",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Sonorous/Draw Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Horn Maestro",
+        "points": 1
+      },
+      {
+        "name": "Critical Draw",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Sonorous/Handicraft Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Horn Maestro",
+        "points": 1
+      },
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Sonorous/KO Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Horn Maestro",
+        "points": 1
+      },
+      {
+        "name": "Slugger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Charge Up Jewel",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Charge Up",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Charge Up/Attack Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Charge Up",
+        "points": 1
+      },
+      {
+        "name": "Attack Boost",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Charge Up/Expert Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Charge Up",
+        "points": 1
+      },
+      {
+        "name": "Critical Eye",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Charge Up/Draw Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Charge Up",
+        "points": 1
+      },
+      {
+        "name": "Critical Draw",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Charge Up/Handicraft Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Charge Up",
+        "points": 1
+      },
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Charge Up/KO Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Charge Up",
+        "points": 1
+      },
+      {
+        "name": "Slugger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Flight Jewel",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Airborne",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Flight/Attack Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Airborne",
+        "points": 1
+      },
+      {
+        "name": "Attack Boost",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Flight/Expert Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Airborne",
+        "points": 1
+      },
+      {
+        "name": "Critical Eye",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Flight/Draw Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Airborne",
+        "points": 1
+      },
+      {
+        "name": "Critical Draw",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Flight/Handicraft Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Airborne",
+        "points": 1
+      },
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Growth Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Self-Improvement",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Poison Jewel",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Poison Duration Up",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Poison/Attack Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Poison Duration Up",
+        "points": 1
+      },
+      {
+        "name": "Attack Boost",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Poison/Expert Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Poison Duration Up",
+        "points": 1
+      },
+      {
+        "name": "Critical Eye",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Poison/Draw Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Poison Duration Up",
+        "points": 1
+      },
+      {
+        "name": "Critical Draw",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Poison/Handicraft Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Poison Duration Up",
+        "points": 1
+      },
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Poison/Precise Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Poison Duration Up",
+        "points": 1
+      },
+      {
+        "name": "Ballistics",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Poison/KO Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Poison Duration Up",
+        "points": 1
+      },
+      {
+        "name": "Slugger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Poison/Ironwall Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Poison Duration Up",
+        "points": 1
+      },
+      {
+        "name": "Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Ironwall Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Ironwall Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Ironwall Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Evasion Jewel",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Evade Window",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Jumping Jewel",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Evade Extender",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Earplugs Jewel",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Earplugs",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Shield Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Guard Up",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Shield Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Guard Up",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Shield Jewel III",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Guard Up",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Shield/Blaze Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Guard Up",
+        "points": 1
+      },
+      {
+        "name": "Fire Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Shield/Stream Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Guard Up",
+        "points": 1
+      },
+      {
+        "name": "Water Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Shield/Frost Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Guard Up",
+        "points": 1
+      },
+      {
+        "name": "Ice Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Shield/Bolt Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Guard Up",
+        "points": 1
+      },
+      {
+        "name": "Thunder Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Shield/Dragon Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Guard Up",
+        "points": 1
+      },
+      {
+        "name": "Dragon Attack",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Shield/Handicraft Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Guard Up",
+        "points": 1
+      },
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Shield/Ironwall Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Guard Up",
+        "points": 1
+      },
+      {
+        "name": "Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Sheath Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Quick Sheathe",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Wind Resist Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Windproof",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Footing Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Tremor Resistance",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Brace Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Flinch Free",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Intimidator Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Intimidator",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Gobbler Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Speed Eating",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Magazine Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Load Shells",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Magazine Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Load Shells",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Magazine/Attack Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Load Shells",
+        "points": 1
+      },
+      {
+        "name": "Attack Boost",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Magazine/Expert Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Load Shells",
+        "points": 1
+      },
+      {
+        "name": "Critical Eye",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Magazine/Draw Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Load Shells",
+        "points": 1
+      },
+      {
+        "name": "Critical Draw",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Magazine/Handicraft Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Load Shells",
+        "points": 1
+      },
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Magazine/Ironwall Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Load Shells",
+        "points": 1
+      },
+      {
+        "name": "Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Mirewalker Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Aquatic/Oilsilt Mobility",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Shockproof Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Shock Absorber",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Dive Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Leap of Faith",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Leap Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Jump Master",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Climber Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Cliffhanger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Friendship Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Wide-Range",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Maintenance Jewel",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Tool Specialist",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Bomber Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Bombardier",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Fungiform Jewel",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Mushroomancer",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Enduring Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Item Prolonger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Satiated Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Free Meal",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Grinder Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Speed Sharpening",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Grinder Jewel II",
+    "slot_level": 2,
+    "skills": [
+      {
+        "name": "Speed Sharpening",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Grinder/Attack Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Speed Sharpening",
+        "points": 1
+      },
+      {
+        "name": "Attack Boost",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Grinder/Expert Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Speed Sharpening",
+        "points": 1
+      },
+      {
+        "name": "Critical Eye",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Grinder/Draw Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Speed Sharpening",
+        "points": 1
+      },
+      {
+        "name": "Critical Draw",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Grinder/Handicraft Jwl",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Speed Sharpening",
+        "points": 1
+      },
+      {
+        "name": "Handicraft",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Grinder/KO Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Speed Sharpening",
+        "points": 1
+      },
+      {
+        "name": "Slugger",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Grinder/Ironwall Jewel",
+    "slot_level": 3,
+    "skills": [
+      {
+        "name": "Speed Sharpening",
+        "points": 1
+      },
+      {
+        "name": "Guard",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Flash Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Blindsider",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Botany Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Botanist",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Geology Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Geologist",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Specimen Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Entomologist",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Ranger Jewel",
+    "slot_level": 1,
+    "skills": [
+      {
+        "name": "Outdoorsman",
+        "points": 1
+      }
+    ]
+  }
+]

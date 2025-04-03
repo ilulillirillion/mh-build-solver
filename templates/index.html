@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MH Wilds - Armor Build Solver</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1>Monster Hunter Wilds - Armor Build Solver</h1>
+  </header>
+
+  <main>
+    <section id="skill-selector">
+      <h2>Select Desired Skills</h2>
+      <div class="search-container">
+        <label for="skill-search">Search and select skills:</label>
+        <input type="text" id="skill-search" placeholder="Start typing to search...">
+        <div id="skill-dropdown" class="dropdown-content">
+          <!-- Skill options will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <section id="selected-skills">
+      <h2>Selected Skills</h2>
+      <ul id="selected-skills-list">
+        <!-- Selected skills will be added here by JavaScript -->
+      </ul>
+      <button id="optimize-button">Find Optimal Build</button>
+      <div id="loading-indicator" style="display: none;">Optimizing... Please wait.</div>
+    </section>
+
+    <section id="results">
+      <h2>Results</h2>
+      <div id="error-message" class="error" style="display: none;"></div>
+      <div id="build-results">
+        <!-- Optimization results will be displayed here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Powered by OR-Tools</p>
+  </footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
