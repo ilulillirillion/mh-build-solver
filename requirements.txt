@@ -3,3 +3,4 @@ beautifulsoup4
 ortools
 Flask
 gunicorn
+pyyaml

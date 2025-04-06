@@ -1,0 +1,20 @@
+armor:
+  head:
+  chest:
+  arms:
+  waist:
+  legs:
+talismans:
+  - name: Hope Charm
+    rarity: 5
+    skills:
+      - name: Self-Improvement
+        points: 1
+      - name: Recovery Up
+        points: 1
+  - name: Geology Charm III
+    rarity: 6
+    skills:
+      - name: Geologist
+        points: 3
+skills: 
