@@ -17,4 +17,7 @@ talismans:
     skills:
       - name: Geologist
         points: 3
-skills: 
+armor_skills:
+weapon_skills:
+set_bonuses:
+group_bonuses:

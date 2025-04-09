@@ -1,0 +1,15 @@
+[
+  {"name": "Alluring Pelt", "max_level": 1, "effects": [{"pieces_required": 3, "granted_skill": "Diversion", "granted_level": 1}]},
+  {"name": "Buttery Leathercraft", "max_level": 1, "effects": [{"pieces_required": 3, "granted_skill": "Affinity Sliding", "granted_level": 1}]},
+  {"name": "Flexible Leathercraft", "max_level": 1, "effects": [{"pieces_required": 3, "granted_skill": "Hunter Gatherer", "granted_level": 1}]},
+  {"name": "Fortifying Pelt", "max_level": 1, "effects": [{"pieces_required": 3, "granted_skill": "Fortify", "granted_level": 1}]},
+  {"name": "Guardian's Protection", "max_level": 1, "effects": [{"pieces_required": 3, "granted_skill": "Ward of Wyveria", "granted_level": 1}]},
+  {"name": "Guardian's Pulse", "max_level": 1, "effects": [{"pieces_required": 3, "granted_skill": "Wylk Burst", "granted_level": 1}]},
+  {"name": "Imparted Wisdom", "max_level": 1, "effects": [{"pieces_required": 3, "granted_skill": "Forager's Luck", "granted_level": 1}]},
+  {"name": "Lord's Favor", "max_level": 1, "effects": [{"pieces_required": 3, "granted_skill": "Inspiration", "granted_level": 1}]},
+  {"name": "Lord's Fury", "max_level": 1, "effects": [{"pieces_required": 3, "granted_skill": "Resuscitate", "granted_level": 1}]},
+  {"name": "Neopteron Alert", "max_level": 1, "effects": [{"pieces_required": 3, "granted_skill": "Honey Hunter", "granted_level": 1}]},
+  {"name": "Neopteron Camouflage", "max_level": 1, "effects": [{"pieces_required": 3, "granted_skill": "Fleetfoot", "granted_level": 1}]},
+  {"name": "Scale Layering", "max_level": 1, "effects": [{"pieces_required": 3, "granted_skill": "Adrenaline", "granted_level": 1}]},
+  {"name": "Scaling Prowess", "max_level": 1, "effects": [{"pieces_required": 3, "granted_skill": "Master Mounter", "granted_level": 1}]}
+]

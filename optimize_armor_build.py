@@ -7,7 +7,8 @@ import time
 ARMOR_DATA_FILE = "armor_data.json"
 DECORATIONS_FILE = "decorations.json"
 TALISMANS_FILE = "talismans.json"
-
+SET_BONUSES_FILE = "set_bonuses.json"     # Added
+GROUP_BONUSES_FILE = "group_bonuses.json" # Added
 
 # Slot weights for optimization
 SLOT_WEIGHTS = {1: 1, 2: 2, 3: 3, 4: 4} # Lvl 4 included just in case
@@ -25,7 +26,7 @@ def load_json(filename):
         exit(1)
 
 # --- Main Optimization Logic ---
-def optimize_build(armor_pieces, decorations, talismans, target_skills):
+def optimize_build(armor_pieces, decorations, talismans, set_bonuses, group_bonuses, target_skills): # Added bonus data args
     model = cp_model.CpModel()
     solver = cp_model.CpSolver()
     # solver.parameters.log_search_progress = True
@@ -54,13 +55,22 @@ def optimize_build(armor_pieces, decorations, talismans, target_skills):
         for skill in deco.get("skills", []): available_skills.add(skill["name"])
     for talisman in talismans:
         for skill in talisman.get("skills", []): available_skills.add(skill["name"])
+    # Also consider skills granted by bonuses as available
+    for bonus in set_bonuses:
+        for effect in bonus.get("effects", []): available_skills.add(effect["granted_skill"])
+    for bonus in group_bonuses:
+        for effect in bonus.get("effects", []): available_skills.add(effect["granted_skill"])
 
     missing_skills = set(target_skills.keys()) - available_skills
     if missing_skills:
-        print("\nError: The following target skills are completely unavailable in the loaded data:")
+        print("\nError: The following target skills are completely unavailable in the loaded data (check armor, decos, talismans, AND bonus effects):")
         for skill in missing_skills: print(f"- {skill}")
         print("Build is impossible.")
         return None
+
+    # Preprocess bonus data for easier lookup
+    set_bonus_effects = {b['name']: b.get('effects', []) for b in set_bonuses}
+    group_bonus_effects = {b['name']: b.get('effects', []) for b in group_bonuses}
 
     print("Creating model variables...")
     # --- Create Model Variables ---
@@ -81,25 +91,70 @@ def optimize_build(armor_pieces, decorations, talismans, target_skills):
     # 3. Skill requirements
     for skill_name, target_level in target_skills.items():
         skill_expr = []
-        # Armor
+        # Armor Direct Skills
         for piece_id, var in armor_vars.items():
             piece = next(p for slot_pieces in pieces_by_slot.values() for p in slot_pieces if p['id'] == piece_id)
             for skill_info in piece.get("skills", []):
                 if skill_info["name"] == skill_name: skill_expr.append(var * skill_info["level"])
-        # Talisman
+        # Talisman Direct Skills
         for talisman_id, var in talisman_vars.items():
             talisman = next(t for t in talismans if t['id'] == talisman_id)
             for skill_info in talisman.get("skills", []):
                 if skill_info["name"] == skill_name: skill_expr.append(var * skill_info["points"])
-        # Decorations
+        # Decoration Skills
         for deco_id, count_var in deco_vars.items():
             deco = next(d for d in decorations if d['id'] == deco_id)
             for skill_info in deco.get("skills", []):
                  if skill_info["name"] == skill_name: skill_expr.append(count_var * skill_info["points"])
 
+        # --- Add Set Bonus Skill Contributions ---
+        for bonus_name, effects in set_bonus_effects.items():
+            # Count pieces contributing to this set bonus
+            pieces_with_bonus = [p['id'] for slot_pieces in pieces_by_slot.values() for p in slot_pieces if bonus_name in p.get('set_bonuses_provided', [])]
+            if not pieces_with_bonus: continue # Skip if no armor piece provides this bonus
+            count_set_bonus = model.NewIntVar(0, 5, f"count_{bonus_name}")
+            model.Add(count_set_bonus == sum(armor_vars[pid] for pid in pieces_with_bonus))
+
+            # Check each activation tier for the bonus
+            for effect in effects:
+                pieces_req = effect['pieces_required']
+                granted_skill = effect['granted_skill']
+                granted_level = effect['granted_level']
+
+                if granted_skill == skill_name:
+                    # Indicator variable: Is this tier active?
+                    is_active_var = model.NewBoolVar(f"active_{bonus_name}_{pieces_req}pc")
+                    # Link indicator to piece count
+                    model.Add(count_set_bonus >= pieces_req).OnlyEnforceIf(is_active_var)
+                    model.Add(count_set_bonus < pieces_req).OnlyEnforceIf(is_active_var.Not())
+                    # Add skill points if active
+                    skill_expr.append(is_active_var * granted_level)
+
+        # --- Add Group Bonus Skill Contributions ---
+        for bonus_name, effects in group_bonus_effects.items():
+             # Group bonuses usually have only one effect/tier (3 pieces)
+             if not effects: continue
+             effect = effects[0] # Assume first effect is the relevant one
+             pieces_req = effect['pieces_required'] # Should be 3
+             granted_skill = effect['granted_skill']
+             granted_level = effect['granted_level']
+
+             if granted_skill == skill_name:
+                 pieces_with_bonus = [p['id'] for slot_pieces in pieces_by_slot.values() for p in slot_pieces if bonus_name in p.get('group_bonuses_provided', [])]
+                 if not pieces_with_bonus: continue
+                 count_group_bonus = model.NewIntVar(0, 5, f"count_{bonus_name}")
+                 model.Add(count_group_bonus == sum(armor_vars[pid] for pid in pieces_with_bonus))
+
+                 is_active_var = model.NewBoolVar(f"active_{bonus_name}_{pieces_req}pc")
+                 model.Add(count_group_bonus >= pieces_req).OnlyEnforceIf(is_active_var)
+                 model.Add(count_group_bonus < pieces_req).OnlyEnforceIf(is_active_var.Not())
+                 skill_expr.append(is_active_var * granted_level)
+
+
+        # Final constraint for the target skill level
         if skill_expr: model.Add(sum(skill_expr) >= target_level)
         elif target_level > 0:
-             print(f"Warning: Target skill '{skill_name}' cannot be obtained. Build might be impossible.")
+             print(f"Warning: Target skill '{skill_name}' cannot be obtained from any source (direct or bonus). Build might be impossible.")
              model.Add(1 == 0) # Force infeasibility
 
     # 4. Decoration Slot Limits
@@ -210,6 +265,47 @@ def optimize_build(armor_pieces, decorations, talismans, target_skills):
              for skill_info in chosen_talisman.get("skills", []): final_skills_display[skill_info["name"]] += skill_info["points"]
         for item in used_decorations:
              for skill_info in item['deco'].get("skills", []): final_skills_display[skill_info["name"]] += skill_info["points"] * item['count']
+
+        # Add skills from activated bonuses
+        # Set Bonuses
+        active_set_bonuses = defaultdict(int)
+        for piece in chosen_armor:
+            for bonus_name in piece.get('set_bonuses_provided', []):
+                active_set_bonuses[bonus_name] += 1
+
+        print("\nChecking Activated Set Bonuses:") # Debug
+        for bonus_name, count in active_set_bonuses.items():
+            if bonus_name in set_bonus_effects:
+                print(f"- {bonus_name}: {count} pieces") # Debug
+                for effect in set_bonus_effects[bonus_name]:
+                    if count >= effect['pieces_required']:
+                        print(f"  - Activating {effect['pieces_required']}pc effect: +{effect['granted_level']} {effect['granted_skill']}") # Debug
+                        final_skills_display[effect['granted_skill']] += effect['granted_level']
+                        # Assuming higher tiers grant *additional* levels or different skills.
+                        # If higher tiers REPLACE lower tiers for the *same skill*, this logic might overcount.
+                        # Example: If 2pc gives SkillA+1 and 4pc gives SkillA+2, this adds +1 and +2.
+                        # If 4pc should *replace* 2pc, we'd need to only add the highest satisfied tier's effect.
+                        # For now, assume additive, but this might need refinement based on game mechanics.
+
+
+        # Group Bonuses
+        active_group_bonuses = defaultdict(int)
+        for piece in chosen_armor:
+             for bonus_name in piece.get('group_bonuses_provided', []):
+                 active_group_bonuses[bonus_name] += 1
+
+        print("\nChecking Activated Group Bonuses:") # Debug
+        for bonus_name, count in active_group_bonuses.items():
+             if bonus_name in group_bonus_effects:
+                 print(f"- {bonus_name}: {count} pieces") # Debug
+                 # Group bonuses typically have one tier (3 pieces)
+                 if not group_bonus_effects[bonus_name]: continue # Skip if no effects defined
+                 effect = group_bonus_effects[bonus_name][0] # Assume first/only effect
+                 if count >= effect['pieces_required']: # Should be 3
+                      print(f"  - Activating {effect['pieces_required']}pc effect: +{effect['granted_level']} {effect['granted_skill']}") # Debug
+                      final_skills_display[effect['granted_skill']] += effect['granted_level']
+
+
         solution['skills'] = final_skills_display
 
 
@@ -238,6 +334,8 @@ if __name__ == "__main__":
     armor_data = load_json(ARMOR_DATA_FILE)
     decorations_data = load_json(DECORATIONS_FILE)
     talismans_data = load_json(TALISMANS_FILE)
+    set_bonuses_data = load_json(SET_BONUSES_FILE)     # Added
+    group_bonuses_data = load_json(GROUP_BONUSES_FILE) # Added
 
     # Run the optimization directly with the new objective
     # Define target skills here for testing if needed
@@ -249,9 +347,9 @@ if __name__ == "__main__":
         "Speed Eating": 3,
         "Free Meal": 3,
         "Intimidator": 3,
-        "Imparted Wisdom": 3,
+        "Forager's Luck": 1,
     }
-    optimal_build = optimize_build(armor_data, decorations_data, talismans_data, test_target_skills)
+    optimal_build = optimize_build(armor_data, decorations_data, talismans_data, set_bonuses_data, group_bonuses_data, test_target_skills) # Added bonus data args
 
     if optimal_build:
         print("\n--- Optimal Build Found ---")

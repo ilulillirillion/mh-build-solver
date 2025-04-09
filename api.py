@@ -1,7 +1,10 @@
 import json
 import time
 from flask import Flask, request, jsonify, render_template, send_from_directory
-from optimize_armor_build import optimize_build, load_json, ARMOR_DATA_FILE, DECORATIONS_FILE, TALISMANS_FILE
+from optimize_armor_build import optimize_build, load_json, ARMOR_DATA_FILE, DECORATIONS_FILE, TALISMANS_FILE, SET_BONUSES_FILE, GROUP_BONUSES_FILE # Added bonus file constants
+# Also import the new skill file constants if they are defined in optimize_armor_build, otherwise define here
+WEAPON_SKILLS_FILE = "weapon_skills.json"
+ARMOR_SKILLS_FILE = "armor_skills.json"
 
 app = Flask(__name__)
 
@@ -11,8 +14,20 @@ try:
   armor_data = load_json(ARMOR_DATA_FILE)
   decorations_data = load_json(DECORATIONS_FILE)
   talismans_data = load_json(TALISMANS_FILE)
-  with open('skills_list.json', 'r') as f:
-    skills_list_data = json.load(f)
+  # Load new skill and bonus files
+  weapon_skills_data = load_json(WEAPON_SKILLS_FILE)
+  armor_skills_data = load_json(ARMOR_SKILLS_FILE)
+  set_bonuses_data = load_json(SET_BONUSES_FILE)
+  group_bonuses_data = load_json(GROUP_BONUSES_FILE)
+  # Combine skills for the dropdown list - ensure uniqueness
+  combined_skills_dict = {}
+  for skill_list in [weapon_skills_data, armor_skills_data, set_bonuses_data, group_bonuses_data]:
+      for skill in skill_list:
+          if skill['name'] not in combined_skills_dict:
+               # Store name and max_level, ignore effects for dropdown
+               combined_skills_dict[skill['name']] = {'name': skill['name'], 'max_level': skill['max_level']}
+  # Convert back to list for consistency with old format expected by frontend
+  skills_list_data = list(combined_skills_dict.values())
 except Exception as e:
   # Handle data loading errors during startup
   print(f"FATAL: Could not load essential data files: {e}")
@@ -57,7 +72,8 @@ def optimize():
 
   try:
     # Pass the pre-loaded data to the optimizer
-    optimal_build = optimize_build(armor_data, decorations_data, talismans_data, target_skills)
+    # Pass the pre-loaded bonus data to the optimizer
+    optimal_build = optimize_build(armor_data, decorations_data, talismans_data, set_bonuses_data, group_bonuses_data, target_skills)
     end_time = time.time()
     print(f"Optimization completed in {end_time - start_time:.2f} seconds.")
 

@@ -1,0 +1,18 @@
+[
+  {"name": "Arkveld's Hunger", "max_level": 2, "effects": [{"pieces_required": 2, "granted_skill": "Hasten Recovery", "granted_level": 1}, {"pieces_required": 4, "granted_skill": "Hasten Recovery", "granted_level": 2}]},
+  {"name": "Blangonga's Spirit", "max_level": 2, "effects": [{"pieces_required": 2, "granted_skill": "War Cry", "granted_level": 1}, {"pieces_required": 4, "granted_skill": "War Cry", "granted_level": 2}]},
+  {"name": "Doshaguma's Might", "max_level": 2, "effects": [{"pieces_required": 2, "granted_skill": "Powerhouse", "granted_level": 1}, {"pieces_required": 4, "granted_skill": "Powerhouse", "granted_level": 2}]},
+  {"name": "Ebony Odogaron's Power", "max_level": 2, "effects": [{"pieces_required": 2, "granted_skill": "Burst Boost", "granted_level": 1}, {"pieces_required": 4, "granted_skill": "Burst Boost", "granted_level": 2}]},
+  {"name": "Fulgur Anjanath's Will", "max_level": 2, "effects": [{"pieces_required": 2, "granted_skill": "Second Wind", "granted_level": 1}, {"pieces_required": 4, "granted_skill": "Second Wind", "granted_level": 2}]},
+  {"name": "Gore Magala's Tyranny", "max_level": 2, "effects": [{"pieces_required": 2, "granted_skill": "Black Eclipse", "granted_level": 1}, {"pieces_required": 4, "granted_skill": "Black Eclipse", "granted_level": 2}]},
+  {"name": "Gravios's Protection", "max_level": 2, "effects": [{"pieces_required": 2, "granted_skill": "Flawless Armor", "granted_level": 1}, {"pieces_required": 4, "granted_skill": "Flawless Armor", "granted_level": 2}]},
+  {"name": "Guardian Arkveld's Vitality", "max_level": 2, "effects": [{"pieces_required": 2, "granted_skill": "Decimator", "granted_level": 1}, {"pieces_required": 4, "granted_skill": "Decimator", "granted_level": 2}]},
+  {"name": "Jin Dahaad's Revolt", "max_level": 2, "effects": [{"pieces_required": 2, "granted_skill": "Binding Counter", "granted_level": 1}, {"pieces_required": 4, "granted_skill": "Binding Counter", "granted_level": 2}]},
+  {"name": "Mizutsune's Prowess", "max_level": 2, "effects": [{"pieces_required": 2, "granted_skill": "Bubbly Dance", "granted_level": 1}, {"pieces_required": 4, "granted_skill": "Bubbly Dance", "granted_level": 2}]},
+  {"name": "Nu Udra's Mutiny", "max_level": 2, "effects": [{"pieces_required": 2, "granted_skill": "Bad Blood", "granted_level": 1}, {"pieces_required": 4, "granted_skill": "Bad Blood", "granted_level": 2}]},
+  {"name": "Rathalos's Flare", "max_level": 2, "effects": [{"pieces_required": 2, "granted_skill": "Scorcher", "granted_level": 1}, {"pieces_required": 4, "granted_skill": "Scorcher", "granted_level": 2}]},
+  {"name": "Rey Dau's Voltage", "max_level": 2, "effects": [{"pieces_required": 2, "granted_skill": "Thunderous Roar", "granted_level": 1}, {"pieces_required": 4, "granted_skill": "Thunderous Roar", "granted_level": 2}]},
+  {"name": "Uth Duna's Cover", "max_level": 2, "effects": [{"pieces_required": 2, "granted_skill": "Protective Veil", "granted_level": 1}, {"pieces_required": 4, "granted_skill": "Protective Veil", "granted_level": 2}]},
+  {"name": "Xu Wu's Vigor", "max_level": 2, "effects": [{"pieces_required": 2, "granted_skill": "Protein Fiend", "granted_level": 1}, {"pieces_required": 4, "granted_skill": "Protein Fiend", "granted_level": 2}]},
+  {"name": "Zoh Shia's Pulse", "max_level": 2, "effects": [{"pieces_required": 2, "granted_skill": "Super Recovery", "granted_level": 1}, {"pieces_required": 4, "granted_skill": "Super Recovery", "granted_level": 2}]}
+]

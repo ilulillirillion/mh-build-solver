@@ -5,11 +5,14 @@ import yaml
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 
-SKILL_URL = "https://monsterhunterwilds.wiki.fextralife.com/Skills"
-# The selector needs escaping for the digit: #wiki-content-block > div.tabcontent.\31 -tab.tabcurrent > div.table-responsive > table
-TABLE_SELECTOR = "#wiki-content-block > div.tabcontent.\\31 -tab.tabcurrent > div.table-responsive > table"
-OVERRIDE_FILE = "input_overrides.yml"
+# Fextralife URL and Selector
+FEXTRA_SKILL_URL = "https://monsterhunterwilds.wiki.fextralife.com/Skills"
+FEXTRA_TABLE_SELECTOR = "#wiki-content-block > div.tabcontent.\\31 -tab.tabcurrent > div.table-responsive > table"
 
+# Kiranico URL
+KIRANICO_SKILL_URL = "https://mhwilds.kiranico.com/data/skills"
+
+OVERRIDE_FILE = "input_overrides.yml"
 def fetch_soup(url):
   """Fetches URL and returns BeautifulSoup object."""
   headers = {
@@ -67,9 +70,14 @@ def parse_skill_table(soup, selector):
           # Optionally skip if level is crucial, but for now, keep it with 0
           # continue
 
+      # --- Extract Fextralife Type (Column 1) ---
+      fextra_type_cell = cols[1]
+      fextra_type_raw = fextra_type_cell.get_text(strip=True)
+
       skill_data.append({
         "name": skill_name,
-        "max_level": max_level
+        "max_level": max_level,
+        "fextra_type": fextra_type_raw # Store Fextralife type
       })
 
     except Exception as e:
@@ -79,15 +87,17 @@ def parse_skill_table(soup, selector):
 
   return skill_data
 
-def apply_skill_overrides(skill_data, override_file=OVERRIDE_FILE):
-  """Applies overrides from YAML file to the skill data."""
+def apply_skill_overrides(skill_data, category_key, override_file=OVERRIDE_FILE):
+  """Applies overrides for a specific category from YAML file to the skill data."""
   try:
     with open(override_file, 'r') as f:
-      overrides = yaml.safe_load(f)
+      all_overrides = yaml.safe_load(f)
 
-    if not overrides or 'skills' not in overrides or not overrides['skills']:
-      print(f"No skill overrides found or section empty in {override_file}")
+    if not all_overrides or category_key not in all_overrides or not all_overrides[category_key]:
+      print(f"No overrides found for category '{category_key}' in {override_file}")
       return skill_data
+
+    category_overrides = all_overrides[category_key]
 
     # Create a dictionary of skills by name for easier lookup
     skill_dict = {s['name']: s for s in skill_data}
@@ -95,24 +105,24 @@ def apply_skill_overrides(skill_data, override_file=OVERRIDE_FILE):
     # Apply overrides
     override_count = 0
     added_count = 0
-    for override in overrides['skills']:
+    for override in category_overrides:
       if not isinstance(override, dict) or 'name' not in override or 'max_level' not in override:
-          print(f"Warning: Skipping invalid skill override format: {override}")
+          print(f"Warning: Skipping invalid override format in '{category_key}': {override}")
           continue
 
       name = override['name']
       if name in skill_dict:
         # Replace existing skill
-        print(f"Applying override for existing skill: {name}")
-        skill_dict[name] = override
+        print(f"Applying override for existing skill in '{category_key}': {name}")
+        skill_dict[name] = override # Assumes override has 'name' and 'max_level'
         override_count += 1
       else:
-        # Add new skill if it doesn't exist
-        print(f"Adding new skill from override: {name}")
+        # Add new skill if it doesn't exist in the scraped data for this category
+        print(f"Adding new skill from override to '{category_key}': {name}")
         skill_dict[name] = override
         added_count += 1
 
-    print(f"Applied {override_count} skill overrides and added {added_count} new skills from {override_file}")
+    print(f"Applied {override_count} overrides and added {added_count} new skills for category '{category_key}' from {override_file}")
 
     # Convert dictionary back to list
     return list(skill_dict.values())
@@ -124,45 +134,174 @@ def apply_skill_overrides(skill_data, override_file=OVERRIDE_FILE):
     print(f"Error parsing YAML in {override_file}: {e}")
     return skill_data
   except Exception as e:
-    print(f"Unexpected error applying skill overrides: {e}")
+    print(f"Unexpected error applying overrides for '{category_key}': {e}")
     return skill_data
+
+
+def fetch_kiranico_skill_types(url=KIRANICO_SKILL_URL):
+    """Fetches skill names and types from Kiranico."""
+    print(f"Fetching skill types from Kiranico: {url}")
+    soup = fetch_soup(url)
+    if not soup:
+        print("Error: Failed to fetch Kiranico page. Cannot determine skill types.")
+        return None
+
+    skill_types = {}
+    # Kiranico uses h3 for categories and then lists skills as links
+    categories = soup.find_all('h3')
+    if not categories:
+        print("Error: Could not find category headers (h3) on Kiranico page.")
+        return None
+
+    print(f"Found {len(categories)} categories on Kiranico.")
+    for category_tag in categories:
+        category_name = category_tag.get_text(strip=True)
+        kiranico_type_key = None # This will be the key for the overrides YAML
+        if category_name == "Weapon":
+            kiranico_type_key = "weapon_skills"
+        elif category_name == "Equip":
+            kiranico_type_key = "armor_skills" # Armor Skill
+        elif category_name == "Group":
+            kiranico_type_key = "group_bonuses" # Group Bonus
+        elif category_name == "Series":
+            kiranico_type_key = "set_bonuses" # Set Bonus
+        else:
+            print(f"Warning: Unknown Kiranico category '{category_name}'")
+            continue
+
+        # Skills are usually in the next sibling div containing links
+        skill_container = category_tag.find_next_sibling('div')
+        if not skill_container:
+             # Sometimes structure might differ, try finding links directly after h3
+             skill_links = category_tag.find_all_next('a', limit=50) # Limit search depth
+        else:
+             skill_links = skill_container.find_all('a')
+
+        if not skill_links:
+            print(f"Warning: No skill links found for Kiranico category '{category_name}'")
+            continue
+
+        for link in skill_links:
+            skill_name = link.get_text(strip=True)
+            # Basic normalization: handle cases like "Spread/Power Shots"
+            normalized_name = skill_name.replace('/', '-')
+            if normalized_name:
+                if normalized_name in skill_types and skill_types[normalized_name] != kiranico_type_key:
+                     print(f"Warning: Skill '{normalized_name}' found in multiple Kiranico categories ('{skill_types[normalized_name]}' and '{kiranico_type_key}'). Using first found.")
+                elif normalized_name not in skill_types:
+                    skill_types[normalized_name] = kiranico_type_key # Store the YAML key
+
+    print(f"Successfully mapped {len(skill_types)} skills from Kiranico.")
+    return skill_types
 
 
 # --- Main Execution ---
 if __name__ == "__main__":
-  print(f"Fetching skill data from: {SKILL_URL}")
-  soup = fetch_soup(SKILL_URL)
+  # 1. Fetch skills from Fextralife (Name, Max Level, Fextra Type)
+  print(f"Fetching skill data from Fextralife: {FEXTRA_SKILL_URL}")
+  fextra_soup = fetch_soup(FEXTRA_SKILL_URL)
+  if not fextra_soup:
+      print("Failed to fetch Fextralife page. Aborting.")
+      exit(1)
 
-  if soup:
-    print("Page fetched successfully. Parsing table...")
-    all_skill_data = parse_skill_table(soup, TABLE_SELECTOR)
+  print("Fextralife page fetched successfully. Parsing table...")
+  fextra_skills = parse_skill_table(fextra_soup, FEXTRA_TABLE_SELECTOR)
+  if not fextra_skills:
+      print("No skill data parsed from Fextralife. Check the script and website structure.")
+      exit(1)
+  print(f"Successfully parsed {len(fextra_skills)} skills from Fextralife.")
 
-    if all_skill_data:
-      print(f"\nSuccessfully parsed {len(all_skill_data)} skills from wiki.")
+  # 2. Fetch Kiranico map ONLY for differentiating Decoration Skills
+  # This map tells us if a skill found on Kiranico is 'weapon_skills' or 'armor_skills'
+  kiranico_deco_check_map = fetch_kiranico_skill_types() # Keep original name, but use output carefully
+  if kiranico_deco_check_map is None:
+      print("Warning: Failed to fetch Kiranico skill types. Cannot reliably differentiate 'Decoration Skill' from Fextralife.")
+      # Proceeding, but 'Decoration Skill' will default to armor_skills
 
-      # Apply overrides from YAML file
-      all_skill_data = apply_skill_overrides(all_skill_data)
+  # 3. Categorize skills based PRIMARILY on Fextralife type
+  categorized_skills = {
+      "weapon_skills": [],
+      "armor_skills": [],
+      "set_bonuses": [],
+      "group_bonuses": []
+  }
+  deco_skill_check_count = 0
 
-      # Sort skills alphabetically by name before saving
-      all_skill_data.sort(key=lambda x: x['name'])
+  for skill in fextra_skills:
+      skill_name = skill['name']
+      fextra_type = skill.get('fextra_type', '').lower()
+      # Prepare skill entry (without fextra_type)
+      skill_entry = {"name": skill_name, "max_level": skill['max_level']}
 
-      # Save to file, overwriting the old one
-      output_filename = "skills_list.json"
+      if "weapon skill" in fextra_type:
+          categorized_skills["weapon_skills"].append(skill_entry)
+      elif "armor skill" in fextra_type:
+          categorized_skills["armor_skills"].append(skill_entry)
+      elif "set bonus skill" in fextra_type:
+          categorized_skills["set_bonuses"].append(skill_entry)
+      elif "group skill" in fextra_type:
+          categorized_skills["group_bonuses"].append(skill_entry)
+      elif "decoration skill" in fextra_type:
+          deco_skill_check_count += 1
+          # ONLY use Kiranico map for "Decoration Skill" from Fextra
+          normalized_name = skill_name.replace('/', '-')
+          kiranico_category = kiranico_deco_check_map.get(normalized_name) if kiranico_deco_check_map else None
+
+          if kiranico_category == "weapon_skills":
+              print(f"Info: Categorized '{skill_name}' (Decoration Skill) as Weapon Skill based on Kiranico.")
+              categorized_skills["weapon_skills"].append(skill_entry)
+          else:
+              if kiranico_category == "armor_skills":
+                   print(f"Info: Categorized '{skill_name}' (Decoration Skill) as Armor Skill based on Kiranico.")
+              elif kiranico_category: # Found on Kiranico but as Group/Set (unexpected for a deco skill)
+                   print(f"Warning: '{skill_name}' (Decoration Skill) found as '{kiranico_category}' on Kiranico. Defaulting to Armor Skill.")
+              else: # Not found on Kiranico
+                   print(f"Warning: '{skill_name}' (Decoration Skill) not found on Kiranico map. Defaulting to Armor Skill.")
+              categorized_skills["armor_skills"].append(skill_entry)
+      else:
+          # Handle any other unexpected Fextralife types
+          print(f"Warning: Unknown Fextralife type '{skill.get('fextra_type', '')}' for skill '{skill_name}'. Defaulting to Armor Skill.")
+          categorized_skills["armor_skills"].append(skill_entry)
+
+
+  print(f"\nInitial categorization complete:")
+  print(f"- Checked {deco_skill_check_count} skills listed as 'Decoration Skill' on Fextralife against Kiranico.")
+  for key, skills_list in categorized_skills.items():
+      print(f"- {key}: {len(skills_list)}")
+
+  # 4. Apply overrides PER CATEGORY
+  print("\nApplying overrides...")
+  for category_key, skills_list in categorized_skills.items():
+      # Ensure apply_skill_overrides uses the correct category_key from the dict
+      categorized_skills[category_key] = apply_skill_overrides(skills_list, category_key)
+
+  # 5. Save categorized and overridden skills to separate files
+  print("\nSaving categorized skill files...")
+  for category_key, data_list in categorized_skills.items():
+      filename = f"{category_key}.json"
+      # Sort data alphabetically by name before saving
+      data_list.sort(key=lambda x: x['name'])
       try:
-        with open(output_filename, "w") as f:
-          # Use compact JSON format (one object per line) as per original file
-          f.write("[\n")
-          for i, skill in enumerate(all_skill_data):
-              f.write(f"  {json.dumps(skill)}")
-              if i < len(all_skill_data) - 1:
-                  f.write(",\n")
-              else:
-                  f.write("\n")
-          f.write("]\n")
-        print(f"Data saved to {output_filename}")
+          with open(filename, "w") as f:
+              # Use compact JSON format (one object per line)
+              f.write("[\n")
+              for i, skill in enumerate(data_list):
+                  f.write(f"  {json.dumps(skill)}")
+                  if i < len(data_list) - 1:
+                      f.write(",\n")
+                  else:
+                      f.write("\n")
+              f.write("]\n")
+          print(f"Data saved to {filename}")
       except IOError as e:
-        print(f"Error writing to file {output_filename}: {e}")
-    else:
-      print("No skill data was parsed. Check the script and website structure.")
-  else:
-    print("Failed to fetch the page. Cannot parse.")
+          print(f"Error writing to file {filename}: {e}")
+
+  # Remove the old combined file if it exists
+  import os
+  old_file = "skills_list.json"
+  if os.path.exists(old_file):
+      try:
+          os.remove(old_file)
+          print(f"\nRemoved old {old_file}")
+      except OSError as e:
+          print(f"Error removing {old_file}: {e}")
