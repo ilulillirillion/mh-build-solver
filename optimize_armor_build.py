@@ -7,8 +7,10 @@ import time
 ARMOR_DATA_FILE = "armor_data.json"
 DECORATIONS_FILE = "decorations.json"
 TALISMANS_FILE = "talismans.json"
-SET_BONUSES_FILE = "set_bonuses.json"     # Added
-GROUP_BONUSES_FILE = "group_bonuses.json" # Added
+SET_BONUSES_FILE = "set_bonuses.json"
+GROUP_BONUSES_FILE = "group_bonuses.json"
+ARMOR_SKILLS_FILE = "armor_skills.json"   # Added for max level lookup
+WEAPON_SKILLS_FILE = "weapon_skills.json" # Added for max level lookup
 
 # Slot weights for optimization
 SLOT_WEIGHTS = {1: 1, 2: 2, 3: 3, 4: 4} # Lvl 4 included just in case
@@ -26,7 +28,7 @@ def load_json(filename):
         exit(1)
 
 # --- Main Optimization Logic ---
-def optimize_build(armor_pieces, decorations, talismans, set_bonuses, group_bonuses, target_skills): # Added bonus data args
+def optimize_build(armor_pieces, decorations, talismans, set_bonuses, group_bonuses, armor_skills, weapon_skills, target_skills): # Added skill data args
     model = cp_model.CpModel()
     solver = cp_model.CpSolver()
     # solver.parameters.log_search_progress = True
@@ -71,6 +73,13 @@ def optimize_build(armor_pieces, decorations, talismans, set_bonuses, group_bonu
     # Preprocess bonus data for easier lookup
     set_bonus_effects = {b['name']: b.get('effects', []) for b in set_bonuses}
     group_bonus_effects = {b['name']: b.get('effects', []) for b in group_bonuses}
+    
+    # Create a lookup dictionary for skill max levels
+    skill_max_levels = {}
+    for skill in armor_skills:
+        skill_max_levels[skill['name']] = skill['max_level']
+    for skill in weapon_skills:
+        skill_max_levels[skill['name']] = skill['max_level']
 
     print("Creating model variables...")
     # --- Create Model Variables ---
@@ -277,15 +286,23 @@ def optimize_build(armor_pieces, decorations, talismans, set_bonuses, group_bonu
         for bonus_name, count in active_set_bonuses.items():
             if bonus_name in set_bonus_effects:
                 print(f"- {bonus_name}: {count} pieces") # Debug
+                
+                # Group effects by skill and find highest activated tier for each skill
+                skill_highest_tier = {}  # {skill_name: (highest_level, pieces_required)}
                 for effect in set_bonus_effects[bonus_name]:
                     if count >= effect['pieces_required']:
-                        print(f"  - Activating {effect['pieces_required']}pc effect: +{effect['granted_level']} {effect['granted_skill']}") # Debug
-                        final_skills_display[effect['granted_skill']] += effect['granted_level']
-                        # Assuming higher tiers grant *additional* levels or different skills.
-                        # If higher tiers REPLACE lower tiers for the *same skill*, this logic might overcount.
-                        # Example: If 2pc gives SkillA+1 and 4pc gives SkillA+2, this adds +1 and +2.
-                        # If 4pc should *replace* 2pc, we'd need to only add the highest satisfied tier's effect.
-                        # For now, assume additive, but this might need refinement based on game mechanics.
+                        skill = effect['granted_skill']
+                        level = effect['granted_level']
+                        pieces = effect['pieces_required']
+                        
+                        # Update if this is the first or highest tier seen for this skill
+                        if skill not in skill_highest_tier or level > skill_highest_tier[skill][0]:
+                            skill_highest_tier[skill] = (level, pieces)
+                
+                # Apply only the highest tier for each skill
+                for skill, (level, pieces) in skill_highest_tier.items():
+                    print(f"  - Activating {pieces}pc effect: +{level} {skill} (highest tier)") # Debug
+                    final_skills_display[skill] += level
 
 
         # Group Bonuses
@@ -305,6 +322,13 @@ def optimize_build(armor_pieces, decorations, talismans, set_bonuses, group_bonu
                       print(f"  - Activating {effect['pieces_required']}pc effect: +{effect['granted_level']} {effect['granted_skill']}") # Debug
                       final_skills_display[effect['granted_skill']] += effect['granted_level']
 
+
+        # Enforce maximum skill levels
+        for skill_name, level in list(final_skills_display.items()):
+            max_level = skill_max_levels.get(skill_name)
+            if max_level and level > max_level:
+                print(f"  Capping {skill_name} from {level} to max level {max_level}")
+                final_skills_display[skill_name] = max_level
 
         solution['skills'] = final_skills_display
 
@@ -334,8 +358,10 @@ if __name__ == "__main__":
     armor_data = load_json(ARMOR_DATA_FILE)
     decorations_data = load_json(DECORATIONS_FILE)
     talismans_data = load_json(TALISMANS_FILE)
-    set_bonuses_data = load_json(SET_BONUSES_FILE)     # Added
-    group_bonuses_data = load_json(GROUP_BONUSES_FILE) # Added
+    set_bonuses_data = load_json(SET_BONUSES_FILE)
+    group_bonuses_data = load_json(GROUP_BONUSES_FILE)
+    armor_skills_data = load_json(ARMOR_SKILLS_FILE)   # Added for max level lookup
+    weapon_skills_data = load_json(WEAPON_SKILLS_FILE) # Added for max level lookup
 
     # Run the optimization directly with the new objective
     # Define target skills here for testing if needed
@@ -349,7 +375,7 @@ if __name__ == "__main__":
         "Intimidator": 3,
         "Forager's Luck": 1,
     }
-    optimal_build = optimize_build(armor_data, decorations_data, talismans_data, set_bonuses_data, group_bonuses_data, test_target_skills) # Added bonus data args
+    optimal_build = optimize_build(armor_data, decorations_data, talismans_data, set_bonuses_data, group_bonuses_data, armor_skills_data, weapon_skills_data, test_target_skills) # Added skill data args
 
     if optimal_build:
         print("\n--- Optimal Build Found ---")
