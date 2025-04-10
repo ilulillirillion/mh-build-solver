@@ -21,46 +21,28 @@ try:
   group_bonuses_data = load_json(GROUP_BONUSES_FILE)
   # Combine ALL skills for the dropdown list, including those granted by bonuses
   # Store the highest max_level found for any skill across all sources.
-  combined_skills_dict = {}
+  combined_skills_dict = {} # name -> {name: str, max_level: int}
 
-  def update_skill(name, max_level):
-      """Helper to add/update skill in dict, keeping highest max_level."""
-      if name not in combined_skills_dict or max_level > combined_skills_dict[name]['max_level']:
-          combined_skills_dict[name] = {'name': name, 'max_level': max_level}
-
-  # Process weapon and armor skills
+  # 1. Process weapon and armor skills first to get their base max_levels
   for skill_list in [weapon_skills_data, armor_skills_data]:
       for skill in skill_list:
-          update_skill(skill['name'], skill['max_level'])
+          name = skill['name']
+          max_level = skill['max_level']
+          if name not in combined_skills_dict or max_level > combined_skills_dict[name]['max_level']:
+               combined_skills_dict[name] = {'name': name, 'max_level': max_level}
 
-  # Process skills granted by set bonuses
-  for bonus in set_bonuses_data:
-      # Add the bonus name itself? No, user said not to.
-      # Add the skills granted by the bonus
-      for effect in bonus.get("effects", []):
-          # Need the max level of the *granted* skill, not the bonus itself.
-          # Find the max level from the main skill lists if possible.
-          granted_name = effect['granted_skill']
-          max_lvl = 1 # Default
-          if granted_name in combined_skills_dict:
-               max_lvl = combined_skills_dict[granted_name]['max_level']
-          else:
-               # If granted skill not in main lists, try finding its max level elsewhere (e.g. search all lists again - less efficient)
-               # For simplicity now, default its max_level if not found in weapon/armor lists.
-               # This might limit the UI slider for bonus-exclusive skills.
-               pass # Keep default max_lvl = 1 or look it up if crucial
-          update_skill(granted_name, max_lvl) # Add/update the granted skill
-
-  # Process skills granted by group bonuses
-  for bonus in group_bonuses_data:
-      for effect in bonus.get("effects", []):
-          granted_name = effect['granted_skill']
-          max_lvl = 1
-          if granted_name in combined_skills_dict:
-               max_lvl = combined_skills_dict[granted_name]['max_level']
-          else:
-               pass # Default max_lvl = 1
-          update_skill(granted_name, max_lvl)
+  # 2. Process skills granted by bonuses, updating max_level if the bonus grants a higher level
+  for bonus_list in [set_bonuses_data, group_bonuses_data]:
+      for bonus in bonus_list:
+          for effect in bonus.get("effects", []):
+              granted_name = effect['granted_skill']
+              granted_level = effect['granted_level']
+              # Update the max_level for this skill if the granted level is higher than currently known max
+              if granted_name not in combined_skills_dict or granted_level > combined_skills_dict[granted_name]['max_level']:
+                   # If skill wasn't in weapon/armor lists, its max level is at least the level granted by this bonus
+                   # If it was, we only update if the bonus grants MORE levels than the skill naturally has.
+                   current_max = combined_skills_dict.get(granted_name, {}).get('max_level', 0)
+                   combined_skills_dict[granted_name] = {'name': granted_name, 'max_level': max(granted_level, current_max)}
   # Convert back to list for consistency with old format expected by frontend
   skills_list_data = list(combined_skills_dict.values())
 except Exception as e:
