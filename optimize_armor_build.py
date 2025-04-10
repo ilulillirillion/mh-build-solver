@@ -366,14 +366,8 @@ if __name__ == "__main__":
     # Run the optimization directly with the new objective
     # Define target skills here for testing if needed
     test_target_skills = {
-        "Outdoorsman": 1,
-        "Botanist": 4,
-        "Geologist": 3,
-        "Entomologist": 1,
-        "Speed Eating": 3,
-        "Free Meal": 3,
-        "Intimidator": 3,
-        "Forager's Luck": 1,
+        "Black Eclipse": 2,
+        "Evade Window": 5,
     }
     optimal_build = optimize_build(armor_data, decorations_data, talismans_data, set_bonuses_data, group_bonuses_data, armor_skills_data, weapon_skills_data, test_target_skills) # Added skill data args
 

@@ -89,8 +89,8 @@ def optimize():
 
   try:
     # Pass the pre-loaded data to the optimizer
-    # Pass the pre-loaded bonus data to the optimizer
-    optimal_build = optimize_build(armor_data, decorations_data, talismans_data, set_bonuses_data, group_bonuses_data, target_skills)
+    # Pass the pre-loaded bonus and skill data to the optimizer
+    optimal_build = optimize_build(armor_data, decorations_data, talismans_data, set_bonuses_data, group_bonuses_data, armor_skills_data, weapon_skills_data, target_skills)
     end_time = time.time()
     print(f"Optimization completed in {end_time - start_time:.2f} seconds.")
 
