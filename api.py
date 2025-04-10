@@ -17,15 +17,15 @@ try:
   # Load new skill and bonus files
   weapon_skills_data = load_json(WEAPON_SKILLS_FILE)
   armor_skills_data = load_json(ARMOR_SKILLS_FILE)
-  set_bonuses_data = load_json(SET_BONUSES_FILE)
-  group_bonuses_data = load_json(GROUP_BONUSES_FILE)
-  # Combine skills for the dropdown list - ensure uniqueness
+  set_bonuses_data = load_json(SET_BONUSES_FILE)     # Keep loading for solver
+  group_bonuses_data = load_json(GROUP_BONUSES_FILE) # Keep loading for solver
+  # Combine ONLY actual skills (weapon + armor) for the dropdown list
   combined_skills_dict = {}
-  for skill_list in [weapon_skills_data, armor_skills_data, set_bonuses_data, group_bonuses_data]:
+  # Prioritize armor skills if name collision occurs (though unlikely)
+  for skill_list in [weapon_skills_data, armor_skills_data]:
       for skill in skill_list:
-          if skill['name'] not in combined_skills_dict:
-               # Store name and max_level, ignore effects for dropdown
-               combined_skills_dict[skill['name']] = {'name': skill['name'], 'max_level': skill['max_level']}
+           # Store name and max_level
+           combined_skills_dict[skill['name']] = {'name': skill['name'], 'max_level': skill['max_level']}
   # Convert back to list for consistency with old format expected by frontend
   skills_list_data = list(combined_skills_dict.values())
 except Exception as e:

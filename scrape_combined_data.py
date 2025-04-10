@@ -224,8 +224,9 @@ def parse_fextra_set_bonus_page(url):
             if not granted_skill_name:
                 continue
 
-            # Determine level from name (e.g., "Skill Name II")
+            # Determine base skill name and level from text like "Skill Name II"
             level = 1
+            base_skill_name = granted_skill_name # Default if no numeral found
             roman_match = re.search(r'\s+(V|IV|III|II|I)$', granted_skill_name)
             if roman_match:
                 roman = roman_match.group(1)
@@ -234,10 +235,10 @@ def parse_fextra_set_bonus_page(url):
                 elif roman == 'III': level = 3
                 elif roman == 'II': level = 2
                 elif roman == 'I': level = 1
-            # Remove Roman numeral suffix if present
-            base_skill_name = re.sub(r'\s+(V|IV|III|II|I)$', '', granted_skill_name).strip()
+                # Extract the base name by removing the numeral part
+                base_skill_name = granted_skill_name[:roman_match.start()].strip()
 
-
+            # Store base name and parsed level
             if "2 piece" in requirement_text:
                  skill_map[2] = {"skill": base_skill_name, "level": level}
             elif "4 piece" in requirement_text:
@@ -454,7 +455,17 @@ if __name__ == "__main__":
         if effects:
             set_bonus_effects_map[name] = effects
 
-    # 1d. Categorize skills and add effects
+    # 1d. Create a set of all skills granted by bonuses to avoid duplication
+    granted_bonus_skills = set()
+    for effects_list in set_bonus_effects_map.values():
+        for effect in effects_list: granted_bonus_skills.add(effect['granted_skill'])
+    # Also add group bonus granted skills (assuming effects parsed correctly into fextra_skills)
+    for skill in fextra_skills:
+        if "group skill" in skill.get('fextra_type', '').lower() and "effects" in skill:
+            for effect in skill["effects"]: granted_bonus_skills.add(effect['granted_skill'])
+    print(f"Identified {len(granted_bonus_skills)} unique skills granted by bonuses.")
+
+    # 1e. Categorize skills and add effects, skipping granted skills from main lists
     print("\nCategorizing skills and adding effects...")
     categorized_skills = {
       "weapon_skills": [], "armor_skills": [],
@@ -464,39 +475,55 @@ if __name__ == "__main__":
     for skill in fextra_skills:
         skill_name = skill['name']
         fextra_type = skill.get('fextra_type', '').lower()
-        # Base entry only includes name and max_level for weapon/armor skills
+        is_set_bonus = "set bonus skill" in fextra_type
+        is_group_bonus = "group skill" in fextra_type
+        is_decoration = "decoration skill" in fextra_type
+        is_weapon_skill = "weapon skill" in fextra_type
+        is_armor_skill = "armor skill" in fextra_type
+
+        # Base entry only includes name and max_level for actual skills
         skill_entry_base = {"name": skill_name, "max_level": skill['max_level']}
 
-        if "weapon skill" in fextra_type:
-            categorized_skills["weapon_skills"].append(skill_entry_base)
-        elif "armor skill" in fextra_type:
-            categorized_skills["armor_skills"].append(skill_entry_base)
-        elif "set bonus skill" in fextra_type:
-            # Add effects scraped from individual page
+        # --- Process Bonuses First ---
+        if is_set_bonus:
             bonus_entry = {"name": skill_name, "max_level": skill['max_level']}
             if skill_name in set_bonus_effects_map:
                  bonus_entry["effects"] = set_bonus_effects_map[skill_name]
             else:
                  print(f"  Warning: No effects found/parsed for set bonus '{skill_name}' from its page.")
             categorized_skills["set_bonuses"].append(bonus_entry)
-        elif "group skill" in fextra_type:
-             # Add effects parsed directly from main table (if present in skill dict)
+            continue # Don't process as any other type
+
+        elif is_group_bonus:
             bonus_entry = {"name": skill_name, "max_level": skill['max_level']}
-            if "effects" in skill: # Effects were added during parse_skill_table
+            if "effects" in skill:
                  bonus_entry["effects"] = skill["effects"]
-            # No warning here if effects missing, already warned in parse_skill_table
             categorized_skills["group_bonuses"].append(bonus_entry)
-        elif "decoration skill" in fextra_type:
+            continue # Don't process as any other type
+
+        # --- Process Actual Skills (Weapon, Armor, Deco), skipping those granted by bonuses ---
+        # Derive base name first by removing potential Roman numeral
+        base_skill_name_check = re.sub(r'\s+(V|IV|III|II|I)$', '', skill_name).strip()
+        if base_skill_name_check in granted_bonus_skills: # <-- CORRECTED CHECK using base name
+            print(f"  Skipping '{skill_name}' (Type: {fextra_type}) from main skill lists as it's granted by a bonus.")
+            continue
+
+        # Proceed with categorization if it's not a granted skill
+        if is_weapon_skill:
+            categorized_skills["weapon_skills"].append(skill_entry_base)
+        elif is_armor_skill:
+            categorized_skills["armor_skills"].append(skill_entry_base)
+        elif is_decoration:
             deco_skill_check_count += 1
             normalized_name = skill_name.replace('/', '-')
             kiranico_category = kiranico_deco_check_map.get(normalized_name) if kiranico_deco_check_map else None
             if kiranico_category == "weapon_skills":
                 categorized_skills["weapon_skills"].append(skill_entry_base)
-            else: # Default deco skills to armor if not weapon or not found
+            else: # Default deco skills to armor
                 categorized_skills["armor_skills"].append(skill_entry_base)
                 if not kiranico_category: print(f"  Info: Defaulted '{skill_name}' (Decoration Skill) to Armor Skill (not found on Kiranico map).")
                 elif kiranico_category != "armor_skills": print(f"  Info: Defaulted '{skill_name}' (Decoration Skill) to Armor Skill (unexpected Kiranico type: {kiranico_category}).")
-        else:
+        else: # Handle unknown types
             print(f"  Warning: Unknown Fextralife type '{skill.get('fextra_type', '')}' for skill '{skill_name}'. Defaulting to Armor Skill.")
             categorized_skills["armor_skills"].append(skill_entry_base)
 
